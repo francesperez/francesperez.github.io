@@ -7,6 +7,7 @@ body {
     background-color: #f58a10;
     padding-left: 150px;
     position: relative;
+    z-index: -2;
 }
 
 .title {
@@ -19,7 +20,7 @@ body {
 }
 
 .title > p:first-child{
-   padding-top: 150px;
+    padding-top: 170px;
     margin-bottom: 20px;
 }
 
@@ -29,7 +30,7 @@ body {
 }
 
 .body-one {
-    padding-bottom: 100px;
+    padding-bottom: 200px;
     overflow-wrap: break-word;
 }
 
@@ -38,17 +39,71 @@ body {
     max-width: 500px;
 }
 
-img {
+iframe {
+    width: 800px;
+    height: 550px;
     position: absolute;
-    bottom: 1px;
-    right: 1px;
+    z-index: -1;
+    bottom: 60px;
+    right: 0px;
+    border-bottom-right-radius: 49px;
+}
+
+.rec-proj > .column {
+    width: 300px;
+    border-bottom-right-radius: 100px;
+    background-color: #f58a10;
+    padding: 30px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.center {
+    display: inline-block;
+    width: 300px;
+    border-bottom-right-radius: 100px;
+}
+
+.rec-proj {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.box-title {
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 0px;
+}
+
+.recent-proj {
+    margin-left: 150px;
+}
+
+.about-me {
+    text-align: right;
+    margin-right: 100px;
+}
+
+a, a:visited {
+    color: #5e0d02;
+}
+
+a:hover {
+    color: orangered;
 }
 
 
 /*--------------MEDIA QUERIES--------------------*/
 @media (max-width: 60em) {
     .first-box {
-        padding-left: 50px;
+        padding-left: 80px;
     }
 }
 
@@ -56,16 +111,30 @@ img {
     .title > p:first-child {
         font-size: 70px;
         padding-right: 20px;
+        background-color: rgba(129, 63, 15, 0.5);
+        width: fit-content;
+        height: fit-content;
+        background-clip: content-box;
     }
 
     .title > p:nth-child(2){
         font-size: 40px;
+        background-color: rgba(129, 63, 15, 0.5);
+        width: fit-content;
+
+    }
+
+    .body-one > p:first-child{
+        width: fit-content;
+        background-color: rgba(129, 63, 15, 0.5);
     }
 
     .body-one > p:nth-child(2){
-        width: 80%;
+        width: fit-content;
         max-width: 500px;
+        background-color: rgba(129, 63, 15, 0.5);
     }
+
 }
 
 
