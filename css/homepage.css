@@ -56,19 +56,6 @@ iframe {
     padding: 30px;
 }
 
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
-
-.center {
-    display: inline-block;
-    width: 300px;
-    border-bottom-right-radius: 100px;
-}
 
 .rec-proj {
     display: flex;
@@ -99,8 +86,28 @@ a:hover {
     color: orangered;
 }
 
+/*css scrolling animation for the homepage*/
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.active{
+    transform: translateY(0)!important;
+    opacity: 1!important;
+}
+
+
 
 /*--------------MEDIA QUERIES--------------------*/
+@media (max-width: 70em) {
+    .rec-proj {
+        flex-wrap: wrap;
+    }
+}
+
 @media (max-width: 60em) {
     .first-box {
         padding-left: 80px;
@@ -126,15 +133,16 @@ a:hover {
 
     .body-one > p:first-child{
         width: fit-content;
-        background-color: rgba(129, 63, 15, 0.5);
+        background-color: rgba(129, 63, 15, 0.1);
     }
 
     .body-one > p:nth-child(2){
         width: fit-content;
         max-width: 500px;
-        background-color: rgba(129, 63, 15, 0.5);
+        background-color: rgba(253, 232, 222, 0.5);
     }
-
 }
+
+
 
 
