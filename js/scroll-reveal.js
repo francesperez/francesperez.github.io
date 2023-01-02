@@ -1,24 +1,59 @@
 "use strict";
 
-window.onload = () =>{
-    window.addEventListener("scroll", reveal);
+let rotateMe = {x:10,y:12,z:16};
 
-    function reveal(){
+ScrollReveal().reveal('.reveal', {
+    delay: 600,
+    duration: 1600
 
-        let reveals = document.querySelectorAll(".reveal")
+});
 
-        for(let i = 0; i < reveals.length; i++){
+ScrollReveal().reveal('.card1', {
+    origin: 'left',
+    delay: 800,
+    duration: 1600,
+    distance: '1000px',
+    rotate: rotateMe
+})
 
-            let windowHeight = window.innerHeight;
-            let revealTop = reveals[i].getBoundingClientRect().top;
-            let revealPoint = 150;
+ScrollReveal().reveal('.card2', {
+    origin: 'left',
+    delay: 700,
+    duration: 1600,
+    distance: '1000px',
+    rotate: rotateMe
+})
 
-            if(revealTop < windowHeight - revealPoint){
-                reveals[i].classList.add("active");
-            }
-        }
-    }
-}
+ScrollReveal().reveal('.card3', {
+    origin: 'left',
+    delay: 600,
+    duration: 1600,
+    distance: '1000px',
+    rotate: rotateMe
+})
+
+
+ScrollReveal().reveal('.card4', {
+    origin: 'right',
+    delay: 600,
+    duration: 1600,
+    distance: '1000px',
+    rotate: rotateMe
+})
+
+ScrollReveal().reveal('.card5', {
+    origin: 'right',
+    delay: 700,
+    duration: 1600,
+    distance: '1000px'
+})
+
+ScrollReveal().reveal('.card6', {
+    origin: 'right',
+    delay: 800,
+    duration: 1600,
+    distance: '1000px'
+})
 
 
 
