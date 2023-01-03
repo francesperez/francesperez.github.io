@@ -5,7 +5,6 @@ let rotateMe = {x:10,y:12,z:16};
 ScrollReveal().reveal('.reveal', {
     delay: 600,
     duration: 1600,
-    reset: true
 });
 
 ScrollReveal().reveal('.card1', {
@@ -14,7 +13,6 @@ ScrollReveal().reveal('.card1', {
     duration: 1600,
     distance: '1000px',
     rotate: rotateMe,
-    reset: true
 })
 
 ScrollReveal().reveal('.card2', {
@@ -23,7 +21,6 @@ ScrollReveal().reveal('.card2', {
     duration: 1600,
     distance: '1000px',
     rotate: rotateMe,
-    reset: true
 })
 
 ScrollReveal().reveal('.card3', {
@@ -32,7 +29,6 @@ ScrollReveal().reveal('.card3', {
     duration: 1600,
     distance: '1000px',
     rotate: rotateMe,
-    reset: true
 })
 
 ScrollReveal().reveal('.headshot', {
@@ -40,7 +36,6 @@ ScrollReveal().reveal('.headshot', {
     delay: 800,
     duration: 1600,
     distance: '1000px',
-    reset: true
 })
 
 
@@ -49,7 +44,6 @@ ScrollReveal().reveal('.bio', {
     delay: 800,
     duration: 1600,
     distance: '1000px',
-    reset: true
 })
 
 

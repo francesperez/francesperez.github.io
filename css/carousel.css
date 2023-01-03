@@ -1,0 +1,46 @@
+.parent {
+    position: relative;
+    padding-top: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#carousel {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin: 0 auto;
+    width: 600px;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    overflow: hidden;
+}
+
+#carousel img {
+    display: inline-block;
+    margin: auto; /* Add this */
+    width: 500px;
+    height: auto;
+    object-fit: contain;
+}
+
+#prev-button,
+#next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    background-color: transparent;
+    border: none;
+    color: #000000;
+}
+
+#prev-button {
+    left: 0;
+}
+
+#next-button {
+    right: 0;
+}
