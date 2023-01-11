@@ -46,5 +46,12 @@ ScrollReveal().reveal('.bio', {
     distance: '1000px',
 })
 
+ScrollReveal().reveal('.scroll', {
+    origin: 'right',
+    delay: 800,
+    duration: 1600,
+    distance: '1000px',
+})
+
 
 

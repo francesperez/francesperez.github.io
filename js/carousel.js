@@ -1,29 +1,25 @@
-let currentIndex = 0;
-const images = document.querySelectorAll('#carousel img');
-const prevButton = document.querySelector('#prev-button');
-const nextButton = document.querySelector('#next-button');
+$(document).ready(function() {
+    let $carousel = $("#carousel");
+    let $items = $carousel.children();
 
-prevButton.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    updateCarousel();
-});
-
-nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % images.length;
-    updateCarousel();
-});
-
-setInterval(() => {
-    currentIndex = (currentIndex + 1) % images.length;
-    updateCarousel();
-}, 3000);
-
-function updateCarousel() {
-    images.forEach((image, index) => {
-        if (index === currentIndex) {
-            image.style.display = 'block';
-        } else {
-            image.style.display = 'none';
+    function update(){
+        let first = $carousel.find(':first');
+        let last = $carousel.find(':last');
+        let width = $carousel.width();
+        let first_left = first.position().left;
+        let last_right = last.position().left + last.width();
+        if (first_left <= 0-width ) {
+            first.animate({left:"+="+width+"px"},2000, function() {
+                first.appendTo($carousel);
+                first.css({left:"0px"});
+            });
         }
-    });
-}
+        if( last_right <= width){
+            last.animate({left:"-="+width+"px"},2000, function() {
+                last.prependTo($carousel);
+                last.css({left:"0px"});
+            });
+        }
+    }
+    setInterval(update,27000);
+});
