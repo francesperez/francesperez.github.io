@@ -123,6 +123,15 @@ a:hover {
     .card1, .card2, .card3 {
         margin-top: 40px;
     }
+
+    iframe {
+        max-width: 800px;
+        width: 100%;
+    }
+
+    .iframeContainer {
+        max-width: 800px;
+    }
 }
 
 @media (max-width: 60em) {
@@ -170,6 +179,7 @@ a:hover {
     .card2, .card3 {
         margin-top: 40px;
     }
+
 }
 
 
