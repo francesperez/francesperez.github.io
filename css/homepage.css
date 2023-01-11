@@ -143,7 +143,9 @@ a:hover {
         flex-wrap: wrap;
     }
 
-
+    .recent-proj {
+        margin-left: 10px;
+    }
 }
 
 @media (min-width:1em ) and (max-width: 51em) {
@@ -179,6 +181,7 @@ a:hover {
     .card2, .card3 {
         margin-top: 40px;
     }
+
 
 }
 
