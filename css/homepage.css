@@ -11,7 +11,7 @@ body {
 }
 
 .title {
-    font-size: 100px;
+    font-size: 140px;
     font-weight: 700;
 }
 
@@ -108,7 +108,11 @@ a:hover {
 }
 
 .bio {
-    padding-top: 70px;
+    margin-top: 150px;
+}
+
+.bioText {
+    font-size: 30px;
 }
 
 
@@ -132,6 +136,15 @@ a:hover {
     .iframeContainer {
         max-width: 800px;
     }
+
+    .about-me, .recent-proj {
+        font-size: 140px;
+    }
+
+    .sec {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 60em) {
@@ -146,6 +159,17 @@ a:hover {
     .recent-proj {
         margin-left: 10px;
     }
+
+    .bio {
+        margin-top: 20px;
+
+    }
+
+    .bioText {
+        width: fit-content;
+        flex-wrap: wrap;
+    }
+
 }
 
 @media (min-width:1em ) and (max-width: 51em) {
@@ -182,6 +206,10 @@ a:hover {
         margin-top: 40px;
     }
 
+
+    .headshot {
+        justify-content: center;
+    }
 
 }
 

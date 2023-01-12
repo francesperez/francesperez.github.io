@@ -1,11 +1,12 @@
 .marquee {
     overflow: hidden;
     white-space: nowrap;
+    margin-top: -100px;
 }
 
 #carousel {
     display: inline-block;
-    animation: scroll 50s linear infinite;
+    animation: scroll 100s linear infinite;
 }
 
 @keyframes scroll {
@@ -21,4 +22,5 @@
     width: 400px;
     height: auto;
     margin: 0px 20px;
+    overflow: hidden;
 }
