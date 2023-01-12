@@ -24,3 +24,10 @@
     margin: 0px 20px;
     overflow: hidden;
 }
+
+@media (min-width:1em ) and (max-width: 34em) {
+    .marquee {
+       margin-top: 45px;
+    }
+
+}
