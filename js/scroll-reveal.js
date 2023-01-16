@@ -9,7 +9,7 @@ ScrollReveal().reveal('.reveal', {
 
 ScrollReveal().reveal('.card1', {
     origin: 'left',
-    delay: 600,
+    delay: 400,
     duration: 1600,
     distance: '1000px',
     rotate: rotateMe,
@@ -17,7 +17,7 @@ ScrollReveal().reveal('.card1', {
 
 ScrollReveal().reveal('.card2', {
     origin: 'left',
-    delay: 500,
+    delay: 300,
     duration: 1600,
     distance: '1000px',
     rotate: rotateMe,
@@ -25,7 +25,7 @@ ScrollReveal().reveal('.card2', {
 
 ScrollReveal().reveal('.card3', {
     origin: 'left',
-    delay: 400,
+    delay: 200,
     duration: 1600,
     distance: '1000px',
     rotate: rotateMe,
@@ -33,7 +33,7 @@ ScrollReveal().reveal('.card3', {
 
 ScrollReveal().reveal('.headshot', {
     origin: 'left',
-    delay: 600,
+    delay: 400,
     duration: 1600,
     distance: '1000px',
 })
@@ -41,14 +41,21 @@ ScrollReveal().reveal('.headshot', {
 
 ScrollReveal().reveal('.bio', {
     origin: 'right',
-    delay: 600,
+    delay: 400,
     duration: 1600,
     distance: '1000px',
 })
 
 ScrollReveal().reveal('.scroll', {
     origin: 'right',
-    delay: 600,
+    delay: 400,
+    duration: 1600,
+    distance: '1000px',
+})
+
+ScrollReveal().reveal('.portfolio', {
+    origin: 'left',
+    delay: 400,
     duration: 1600,
     distance: '1000px',
 })
