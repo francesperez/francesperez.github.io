@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/homepage.css">
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/cursor.css">
+    <link rel="stylesheet" href="css/slider.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,7 +49,8 @@
             </div>
             <div class="column card3">
                 <p class="box-title"><a href="https://venued.us">Venued</a></p>
-                 <p>Venued is social media platform where users can post tips, ask questions, and answer questions based on venues that have been searched for. Users can create accounts, edit or delete comments, and up/down vote tips or answers. Venued was made using the Yelp and PreditHQ APIs and utilizes JDBC and a Google SMTP server for various functionalities. The platform was built using Springboot, Thymeleaf, JavaScript, jQuery, HTML, and CSS for a seamless user experience.</p>
+                 <p>Venued is a social media platform where users can post tips, ask questions, and answer questions
+                     based on venues that have been searched for. Users can create accounts, edit or delete comments, and up/down vote tips or answers. Venued was made using the Yelp and PreditHQ APIs and utilizes JDBC and a Google SMTP server for various functionalities. The platform was built using Springboot, Thymeleaf, JavaScript, jQuery, HTML, and CSS for a seamless user experience.</p>
             </div>
         </div>
 </section>
@@ -74,16 +76,15 @@
                 <br>
                 When I'm not coding, you will find me painting, sculpting, or drawing on my iPad. One of my favorite
                 subjects to paint are differnt kinds of dogs! Here are some of the dog portraits I've painted over
-                the years.
+                the years:
             </span>
         </div>
-
     </div>
 </section>
 
 <!--ART CAROUSEL-->
 
-            <section>
+<section>
                 <div class="parent marquee scroll">
                     <div id="carousel">
                         <img class="ribbonScroll" src="/img/Art-Portfolio/basset-hounds_orig.jpeg" alt="Image 1">
@@ -101,14 +102,61 @@
                         <img class="ribbonScroll" src="/img/Art-Portfolio/pooch_1_orig.jpeg" alt="Image 6">
                         <img class="ribbonScroll" src="/img/Art-Portfolio/poodle_orig.jpeg" alt="Image 7">
                     </div>
-
                 </div>
             </section>
 
 
-
+<!--PORTFOLIO SECTION-->
 <section>
     <p class="title">Portfolio</p>
+    <div class="sliderBody">
+        <div class="img-slider">
+            <div class="slide active">
+                <img src="img/Websites/Venued.png" alt="">
+                <div class="info">
+                    <h2>Venued</h2>
+                    <p>Venued is a social media platform where users can post tips, ask questions, and answer questions
+                        based on venues that have been searched for. </p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/Websites/Blogbea.png" alt="">
+                <div class="info">
+                    <h2>Blogbea</h2>
+                    <p>Blogbea is a simple, minimalist blogging website where users can create an account and post short snippets of whatever is on their mind. </p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/Websites/CuteWeather.png" alt="">
+                <div class="info">
+                    <h2>Cute Weather</h2>
+                    <p>CuteWeather uses OpenWeather’s free API to forecast weather data by searching for a specific location. </p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/Websites/SpriteGame.png" alt="">
+                <div class="info">
+                    <h2>Codeup Legends</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/Websites/SyberSpace.png" alt="">
+                <div class="info">
+                    <h2>SyberSpace (Prototype)</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="navigation">
+                <div class="btn active"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+            </div>
+        </div>
+    </div>
+
 </section>
 
 
@@ -119,32 +167,35 @@
       </div>
     </div>
 
-<div class="circle"></div>
-<div class="circle"></div>
-<div class="circle"></div>
-<div class="circle"></div>
-<div class="circle"></div>
-<div class="circle"></div>
-<div class="circle"></div>
-<div class="circle"></div>
-<div class="circle"></div>
-<div class="circle"></div>
-<div class="circle"></div>
-<div class="circle"></div>
-<div class="circle"></div>
-<div class="circle"></div>
-<div class="circle"></div>
-<div class="circle"></div>
-<div class="circle"></div>
-<div class="circle"></div>
-<div class="circle"></div>
-<div class="circle"></div>
-
+<!--CURSOR-->
+<section class="cursorHolder">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+</section>
 
 </div>
 <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 <script src="js/scroll-reveal.js"></script>
 <script src="js/carousel.js"></script>
 <script src="js/cursor.js"></script>
+<script src="js/slider.js"></script>
 </body>
 </html>
